@@ -1,0 +1,20 @@
+name: Worlds
+main: Worlds\main
+version: 1.0.0
+api: [4.0.0]
+load: POSTWORLD
+author: PJZ9n
+desctiption: PMMP MultiWorld Plugin
+website: https://www.github.com/pjz9n
+permissions:
+  worlds:
+    default: op
+    description: "Allows using all the worlds things"
+    children:
+      worlds.command:
+        default: op
+        description: "Allows using all the worlds commands"
+        children:
+          worlds.command.worlds:
+            default: op
+            description: "Allows op the worlds command"
